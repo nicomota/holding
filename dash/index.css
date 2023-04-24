@@ -337,6 +337,14 @@ nav.navbar-top a {
 .icones_banco:hover {
   transform: scale(1.2);
 }
+
+.nome_app{
+  margin-top: 20%;
+  font-size:medium;
+  margin: 0 auto;
+  text-align: center;
+}
+
 .cards-app{
   padding-top: 20px;
   display: grid;
@@ -474,7 +482,7 @@ nav.navbar-top a {
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #070617;
+  background-color: #000000;
 }
 .footer .col {
   width: 190px;
@@ -531,6 +539,9 @@ nav.navbar-top a {
   .contain {
     width: 1200px;
     margin: 0 auto;
+    display: flex;
+  justify-content: center;
+  width: 100%;
   }
 }
 @media only screen and (max-width: 1139px) {
@@ -568,4 +579,15 @@ nav.navbar-top a {
   .footer .col {
     width: 100%;
   }
+}
+
+.app{
+  width: 80px;
+    border-radius: 50%;
+}
+
+.aplicacoes{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
 }
