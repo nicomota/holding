@@ -14,7 +14,7 @@
   top: 0;
   height: 100%;
   width: 78px;
-  background: rgb(0, 0, 0);
+  background: rgb(6, 5, 15);
  /*background: #11101D;*/
   padding: 6px 14px;
   z-index: 99;
@@ -259,6 +259,12 @@
 }
 
 
+
+
+
+
+
+
 /*  ============================ HEADER ========================== */
 
 :root {
@@ -286,6 +292,7 @@ section[role="search"] {
   font-size: .75rem;
   width: 220%;
   border: 1px rgba(0, 0, 0, 0.144) solid;
+  border-color: rgba(255, 137, 2, 0.678);
 }
 section[role="search"] input {
   border: none;
@@ -396,12 +403,15 @@ nav.navbar-top a {
 
 .cards-app{
   padding-top: 20px;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 25px;
-  grid-row-gap: 25px;
+  grid-row-gap: 25px; */
   -webkit-animation: slideY 0.6s both;
   animation: slideY 0.6s both;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
 :root {
@@ -434,12 +444,13 @@ nav.navbar-top a {
 }
 .cards-app {
   padding-top: 20px;
-  display: grid;
+  /* display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 25px;
-  grid-row-gap: 25px;
+  grid-row-gap: 25px; */
   -webkit-animation: slideY 0.6s both;
   animation: slideY 0.6s both;
+  justify-content: center;
 }
 .app-card {
   padding: 20px 16px;
@@ -449,6 +460,8 @@ nav.navbar-top a {
   transition: 0.5s;
   box-shadow: 4px 4px rgb(226, 225, 225);
   border: 1px rgba(0, 0, 0, 0.068) solid;
+  width: 30%;
+  min-width: 200px;
 }
 .app-card:hover {
   transform: scale(1.05);
@@ -457,6 +470,7 @@ nav.navbar-top a {
   width: 46px;
   padding: 10px;
   border-radius: 8px;
+  display: flex;
 }
 .app-card-title {
   font-weight: 600;
@@ -468,7 +482,8 @@ nav.navbar-top a {
   font-size: 13px;
   margin-top: 14px;
   line-height: 1.6em;
-  height: 10%;
+
+
 }
 .app-card-header {
   display: flex;
