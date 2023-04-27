@@ -239,7 +239,7 @@
   width: calc(100% - 78px);
   transition: all 0.5s ease;
   z-index: 2;
-  background: #f0f0f0e0;
+  background: #f0f0f0;
 }
 .menu.open ~ .home-section{
   left: 250px;
@@ -257,7 +257,6 @@
       display: none;
  }
 }
-
 
 
 /*  ============================ HEADER ========================== */
@@ -286,6 +285,7 @@ section[role="search"] {
   border-radius: 1em;
   font-size: .75rem;
   width: 220%;
+  border: 1px rgba(0, 0, 0, 0.144) solid;
 }
 section[role="search"] input {
   border: none;
@@ -344,6 +344,8 @@ nav.navbar-top a {
   margin: 10px;
   position: relative;
   text-align: center;
+  border: 1px rgba(0, 0, 0, 0.144) solid;
+
 }
 .icones_banco::after {
   content: attr(data-title);
@@ -375,16 +377,18 @@ nav.navbar-top a {
   border-radius: 50%;
   cursor: pointer;
   position: relative;
-  width: 5.5%;
+  width: 6%;
   margin: 0.89%;
+  border: 1px rgba(0, 0, 0, 0.144) solid;
 
 }
 .link_a{
   text-decoration: none;
 }
 .app2:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
+
 
 
 
@@ -426,7 +430,7 @@ nav.navbar-top a {
   border-radius: 6px;
   font-size: 13px;
   font-weight: 600;
-  margin-top: 14px;
+  margin-top: 4%;
 }
 .cards-app {
   padding-top: 20px;
@@ -444,6 +448,7 @@ nav.navbar-top a {
   cursor: pointer;
   transition: 0.5s;
   box-shadow: 4px 4px rgb(226, 225, 225);
+  border: 1px rgba(0, 0, 0, 0.068) solid;
 }
 .app-card:hover {
   transform: scale(1.05);
@@ -463,6 +468,7 @@ nav.navbar-top a {
   font-size: 13px;
   margin-top: 14px;
   line-height: 1.6em;
+  height: 10%;
 }
 .app-card-header {
   display: flex;
