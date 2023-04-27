@@ -366,9 +366,8 @@ nav.navbar-top a {
 /*  ============================ APLICACOES ========================== */
 
 .aplicacoes{
-  justify-content: center;
-  align-items: center;
   text-decoration: none;
+  text-align: center;
 }
 .app2{
   transition: 0.5s;
@@ -376,25 +375,16 @@ nav.navbar-top a {
   border-radius: 50%;
   cursor: pointer;
   position: relative;
-  width: 5%;
+  width: 5.5%;
   margin: 0.89%;
+
 }
 .link_a{
   text-decoration: none;
 }
 .app2:hover {
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
-.nome_app{
-  margin-top: 20%;
-  font-size:medium;
-  margin: 0 auto;
-  text-align: center;
-}
-
-
-
-
 
 
 
