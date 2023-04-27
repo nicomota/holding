@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Status Board</title>
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="/dash/bots/bot.css">
+
+</head>
+<body>
+   <div class="menu">
+      <div class="logo">
+         <img class="icone" src="/dash/img/jea.png" style="width: 40px;" alt=""> 
+         <div class="logo_nome">J&A | Suporte</div>
+         <i class='bx bx-menu' id="btn" ></i>
+      </div>
+      <ul class="menu-lista">
+         <li>
+            <i class='bx bx-search'></i>
+            <input type="text" placeholder="Procurar...">
+            <span class="tooltip">Procurar</span>
+         </li>
+         <li>
+            <a href="/dash/index.html">
+            <i class='bx bx-grid-alt'></i>
+            <span class="links_name">Dashboard</span>
+            </a>
+            <span class="tooltip">Dashboard</span>
+         </li>
+         <li>
+            <a href="/dash/bots/bot.html">
+            <i class='bx bx-pie-chart-alt-2' ></i>
+            <span class="links_name">Bots</span>
+            </a>
+            <span class="tooltip">Bots</span>
+            </li>
+         <li>
+         <li>
+            <a href="">
+            <i class='bx bx-folder' ></i>
+            <span class="links_name">Em desenvolvimento</span>
+            </a>
+            <span class="tooltip">Em desenvolvimento</span>
+         </li>
+         <li>
+            <a href="#">
+            <i class='bx bx-user' ></i>
+            <span class="links_name">Em desenvolvimento</span>
+            </a>
+            <span class="tooltip">Em desenvolvimento</span>
+         </li>
+         
+         <!-- <li>
+            <a href="#">
+              <i class='bx bx-chat' ></i>
+              <span class="links_name">Messages</span>
+            </a>
+            <span class="tooltip">Messages</span>
+            </li>
+            <li>
+            <a href="#">
+              <i class='bx bx-pie-chart-alt-2' ></i>
+              <span class="links_name">Analytics</span>
+            </a>
+            <span class="tooltip">Analytics</span>
+            </li>
+            <li>
+            <a href="#">
+              <i class='bx bx-cart-alt' ></i>
+              <span class="links_name">Order</span>
+            </a>
+            <span class="tooltip">Order</span>
+            </li> -->
+         <li>
+            <a href="">
+            <i class='bx bx-heart' ></i>
+            <span class="links_name">Em desenvolvimento</span>
+            </a>
+            <span class="tooltip">Em desenvolvimento</span>
+         </li>
+      </ul>
+   </div>
+<!-- partial:index.partial.html -->
+<section class="home-section">
+   <dashboard class="dashboard">
+      <dashboard-header title="BOTS FONTES">
+          <dashboard-clock digital="true" binary="true" />
+      </dashboard-header>
+      <server-list>
+          <server v-for="(server, index) in servers" :class="{ 'has-failed': !server.status }" :type="server.type" @click.native="updateServerStatus(index)">
+              <span slot="name" class="data">{{server.name}}</span>
+              <span slot="status" class="data signal">{{server.status ? 'ONLINE' : 'OFFLINE'}}</span>
+              <span slot="adr" class="data">{{server.adr}}</span>
+          </server>
+      </server-list>
+  </dashboard>
+</section>
+
+
+<!-- partial -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.3.4/vue.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/vuex/2.0.0/vuex.min.js'></script><script  src="/dash/bots/bot.js"></script>
+
+</body>
+</html>
