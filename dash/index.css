@@ -346,11 +346,12 @@ nav.navbar-top a {
   transition: 0.5s;
   box-shadow: 4px 4px rgb(226, 225, 225);
   border-radius: 15%;
-  width: 70%;
+  width: 80%;
   cursor: pointer;
   position: relative;
   text-align: center;
   border: 1px rgba(0, 0, 0, 0.144) solid;
+  
 
 }
 .icones_banco::after {
@@ -481,8 +482,7 @@ nav.navbar-top a {
   font-size: 13px;
   margin-top: 14px;
   line-height: 1.6em;
-
-
+  min-height: 100px;
 }
 .app-card-header {
   display: flex;
@@ -530,17 +530,73 @@ nav.navbar-top a {
   width: 50%;
 }
 
+
+
+/*  ============================ statistics ========================== */
+
+.statistics {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5em;
+  background-color: var(--ghost-white);
+  border-radius: .75em;
+  padding: 1.5em;
+  -webkit-box-shadow: 0px 10px 18px 0px rgba(241, 243, 255, 1);
+  -moz-box-shadow: 0px 10px 18px 0px rgba(241, 243, 255, 1);
+  box-shadow: 0px 10px 18px 0px rgb(214, 220, 249);
+  width: 90%;
+  margin: auto;
+  margin-top: 1.5%;
+}
+
+.statistics header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+.statistics h1 {
+  font-weight: 600;
+}
+
+#statisticsChart {
+  height: 10em;
+}
+
+
+
+
+
+
+
 /*============================================= ATÉ AQUI JA ESTA COM A NOMENCLATURA CORRETA ================================================*/
 /*  ============================ FOOTER ========================== */
 
-
-
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 /* STYLES SPECIFIC TO FOOTER  */
-.footer {
-  max-width: 100%;
-  width: 100%;
-  position: relative;
-  height: 50px;
+footer {
   background-color: rgb(6, 5, 15);
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  position: fixed;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 999;
+}
+
+footer p {
+  margin: 10px 0;
+}
+
+footer i {
+  color: red;
+}
+
+footer a {
+  color: #3c97bf;
+  text-decoration: none;
 }

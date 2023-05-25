@@ -151,12 +151,12 @@ const dashboard = new Vue({
       store.dispatch('serverStatus', server);
     } },
 
-  // mounted() {
-  //   setInterval(() =>
-  //   store.dispatch('serverStatus',
-  //   Math.floor(Math.random() * (this.servers.length - 0) + 0)),
-  //   1000);
-  // }
+  mounted() {
+    setInterval(() =>
+    store.dispatch('serverStatus',
+    Math.floor(Math.random() * (this.servers.length - 0) + 0)),
+    1000);
+  }
  });
 
 

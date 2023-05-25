@@ -4,15 +4,16 @@
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css'><link rel="stylesheet" href="./style.css">
       <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
       <link rel="stylesheet" href="/holding/dash/index.css">
-      <title>Dashboard</title>
+      <title>Mordor</title>
    </head>
    <body>
       <div class="menu">
          <div class="logo">
             <img class="icone" src="/holding/dash/img/jea.png" style="width: 40px;" alt=""> 
-            <div class="logo_nome">J&A | Suporte</div>
+            <div class="logo_nome">Mordor | J&A</div>
             <i class='bx bx-menu' id="btn" ></i>
          </div>
          <ul class="menu-lista">
@@ -118,13 +119,18 @@
                </a>
             </div>
             <div class="c6">
-               <a href="https://c6consig.interfile.com.br/login">
+               <a href="https://c6.c6consig.com.br/WebAutorizador/MenuWeb/Esteira/AprovacaoConsulta/UI.AprovacaoConsultaAnd.aspx?">
                <img class="icones_banco" src="/holding/dash/img/c6.png" alt="">
                </a>
             </div>
             <div class="neon">
                <a href="">
                <img class="icones_banco" src="/holding/dash/img/neon.png" alt="">
+               </a>
+            </div>
+            <div class="cash">
+               <a href="">
+               <img class="icones_banco" src="/holding/dash/img/cach.png" style="background-color: rgba(71, 115, 211, 0.842);" alt="">
                </a>
             </div>
             <div class="banrisul">
@@ -140,6 +146,11 @@
             <div class="facta">
                <a href="http://agentefacta.com.br/">
                <img class="icones_banco" src="/holding/dash/img/facta.png" alt="" >
+               </a>
+            </div>
+            <div class="master">
+               <a href="">
+               <img class="icones_banco" src="/holding/dash/img/master.jpg" alt="" >
                </a>
             </div>
             <div class="mercantil">
@@ -187,7 +198,9 @@
                <img class="app2" src="/holding/dash/img/wpp.png" alt="">
             </a>
          </div>
-         <h1 class="titulos"  style="margin-top: 1%;">Ferramentas de Acompanhamento</h1>
+         <div>
+           <h1 class="titulos"  style="margin-top: 1%;">Ferramentas de Acompanhamento</h1>
+         </div >
          <div class="cards-app">
             <div class="app-card">
                <div class="app-card-header">
@@ -286,17 +299,25 @@
                </a>
             </div>
          </div>
-         
+        <!-- <div>
+            <h1 class="titulos"  style="margin-top: 2%;">Acompanhamento de chamados</h1>
+          </div >
+         <div class="statistics">
+            <header>
+                <h1>Estatística </h1>
+            </header>
+            <div class="chartContainer">
+                <canvas id="statisticsChart"></canvas>
+            </div>
+        </div>  -->
       </section>
-      <!-- FOOTER START -->
-       <div class="footer" >
-         <div class="contain">
-            
-      </div> 
-      <!-- END OF FOOTER -->
+
       <script src='https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js'></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       <script src='https://cdnjs.cloudflare.com/ajax/libs/chartjs-plugin-annotation/0.5.5/chartjs-plugin-annotation.js'></script>
       <script src='https://cdn.rawgit.com/chartjs/Chart.js/master/samples/utils.js'></script>
+      <script src='https://cdn.rawgit.com/chartjs/Chart.js/master/samples/utils.js'></script><script  src="/holding/dash/index.js"></script>
       <script  src="/holding/dash/index.js"></script>
+
    </body>
 </html>
